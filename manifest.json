@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Hemis++",
+    "description": "student.fbtuit.uz uchun qo'shimcha(hemis.uz keyinchalik qo'shiladi). 1-qo'shimcha: agar bundan oldin dars yo'q bo'lsa(1-dars 2-juftlikka to'g'ri kelsa, ko'rsatadi). 2-qo'shimcha: ayni damdagi darsni ajratib turadi",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "favicon.png"
+    },
+    "content_scripts":[
+        {
+            "js":[ "script.js" ],
+            "matches":[ "https://student.fbtuit.uz/education/time-table*" ]
+        }
+    ]
+  }
